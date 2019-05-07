@@ -16,7 +16,6 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
-      { href="https://fonts.googleapis.com/css?family=Pontano+Sans", rel="stylesheet" }
     ]
   },
 

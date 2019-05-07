@@ -1,24 +1,36 @@
 <template>
   <section class="container">
-    <div class='index-header'>
-      <div class='index-header1'>The Simple, Secure Framework</div>
-      <div class='index-header2'>Develops Trust</div>
+    <div class="index-header">
+      <div class="index-header1">The Simple, Secure Framework</div>
+      <div class="index-header2">Developers Trust</div>
     </div>
-    <div class='index-description'>Build <span class='bold'>powerful</span>, <span class='bold'>scalable applications</span>, with 
-    <span class='bold'>minimal overhead</span> and full <span class='bold'>out-of-the-box</span> functionality - 
-    <span class='underline'>your code, your way </span>
+    <div class="index-description">
+      Build
+      <span class="bold">powerful</span>,
+      <span class="bold">scalable applications</span>, with
+      <span class="bold">minimal overhead</span> and full
+      <span class="bold">out-of-the-box</span> functionality -
+      <span class="bold">your code, your way</span>
+    </div>
+    <button class="index-button" href="/tutorials">Get Started with hapi</button>
+    <div class="index-footer">
+      Originally developed to handle Walmart’s
+      <span class="bold">Black Friday scale</span>,
+      hapi continues to be the
+      <span class="bold">proven</span> choice for
+      <span class="bold">enterprise-grade</span> backend needs.
     </div>
   </section>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import Logo from "~/components/Logo.vue";
 
 export default {
   components: {
     Logo
   }
-}
+};
 
 // let nav = document.querySelector('.navbar');
 // let content = document.querySelector('.container');
@@ -26,6 +38,7 @@ export default {
 </script>
 
 <style>
+@import "../assets/styles/variables.css";
 
 .container {
   margin: 100px auto 0 auto;
@@ -35,6 +48,7 @@ export default {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  color: var(--black);
 }
 
 .index-header {
@@ -44,14 +58,26 @@ export default {
 
 .index-description {
   margin-top: 50px;
-  font-size: 1.5em;
+  font-size: 1.3em;
+}
+
+.index-button {
+  border-radius: 10px;
+  border: none;
+  background: var(--orange);
+  padding: 15px;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 40px 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.index-footer {
+  font-size: 1.3em;
 }
 
 .bold {
   font-weight: 700;
-}
-
-.underline {
-  text-decoration: underline;
 }
 </style>
