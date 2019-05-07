@@ -1,7 +1,10 @@
 :root {
+   
 
    /* Colors */
    --orange: #f79727;
    --text: #333;
 
+   /* Fonts */
+   --mainFont: 'Pontano Sans', sans-serif;
 }
