@@ -2,15 +2,18 @@
   <div class="contain">
     <Nav />
     <nuxt />
+    <Footer />
   </div>
 </template>
 
 <script>
 import Nav from "~/components/Nav.vue"
+import Footer from "~/components/Footer.vue"
 
 export default {
   components: {
-    Nav
+    Nav,
+    Footer
   }
 }
 </script>
@@ -38,7 +41,11 @@ html {
 }
 
 .contain {
+  position: relative;
   margin: 0 auto;
+  min-height: 100vh;
+  height: 100%;
+  padding-bottom: 50px;
 }
 
 .button--green {

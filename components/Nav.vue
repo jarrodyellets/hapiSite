@@ -4,23 +4,23 @@
       <a class="logo" href="/" title="Back to home" />
       <div class="nav-collapse">
         <ul class="nav-links">
-          <li class="nav-link" title="Tutorials">
-            Tutorials
+          <li class="nav-links-li">
+            <a class="nav-link" title="Tutorials" href="/tutorials">Tutorials</a>
           </li>
-          <li class="nav-link" title="API">
-            API
+          <li class="nav-links-li">
+            <a class="nav-link" title="API" href="/api">API</a>
           </li>
-          <li class="nav-link" title="Resources">
-            Resources
+          <li class="nav-links-li">
+            <a class="nav-link" title="Resources" href="/resources">Resources</a>
           </li>
-          <li class="nav-link" title="Plugins">
-            Plugins
+          <li class="nav-links-li">
+            <a class="nav-link" title="Plugins" href="/plugins">Plugins</a>
           </li>
-          <li class="nav-link" title="Updates">
-            Updates
+          <li class="nav-links-li">
+            <a class="nav-link" title="Updates" href="/updates">Updates</a>
           </li>
-          <li class="nav-link" title="Help">
-            Help
+          <li class="nav-links-li">
+            <a class="nav-link" title="Help" href="/help">Help</a>
           </li>
         </ul>
       </div>
@@ -72,8 +72,11 @@ export default {}
   padding: 0;
 }
 
+.nav-links-li {
+  display: inline-block
+}
+
 .nav-link {
-  display: inline-block;
   margin: 10px;
   cursor: pointer;
   color: var(--orange);
@@ -81,6 +84,7 @@ export default {}
   box-sizing: border-box;
   border-radius: 6px;
   padding: 5px;
+  text-decoration: none;
 }
 
 .nav-link:hover {
