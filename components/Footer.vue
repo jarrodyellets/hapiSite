@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <footer class="footer">
     <ul class="footer-links">
       <li class="footer-links-li">
         <a class="footer-link" title="Tutorials" href="/tutorials">Tutorials</a>
@@ -32,7 +32,7 @@
       <a target="__blank" href="https://github.com/hapijs/hapi/graphs/contributors">our contributors</a> and a very big thanks to
       <a target="__blank" href="https://packet.net">packet.net</a> for our hosting.
     </div>
-  </div>
+  </footer>
 </template>
 
 <script>
