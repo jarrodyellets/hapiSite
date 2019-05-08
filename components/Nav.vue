@@ -16,6 +16,9 @@
           <a class="nav-link" title="Plugins" href="/plugins">Plugins</a>
         </li>
         <li class="nav-links-li">
+          <a class="nav-link" title="Contribute" href="/contribute">Contribute</a>
+        </li>
+        <li class="nav-links-li">
           <a class="nav-link" title="Updates" href="/updates">Updates</a>
         </li>
         <li class="nav-links-li">
@@ -79,8 +82,10 @@ export default {};
   font-weight: 700;
   box-sizing: border-box;
   border-radius: 6px;
-  padding: 5px;
+  padding: 5px 0;
   text-decoration: none;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
 }
 
 .nav-link:before{
@@ -88,31 +93,33 @@ export default {};
   position: absolute;
   content: "";
   left: 0;
+  right: 0;
   top: 0;
-  height: 2px;
+  height: 1px;
   background: var(--orange);
+  -webkit-transition: .15s linear;
+  transition: .15s linear;
 }
 
 .nav-link:after {
   width: 0;
   position: absolute;
   content: "";
+  left: 0;
   right: 0;
-  top: 0;
-  height: 2px;
+  bottom: 0;
+  height: 1px;
   background: var(--orange);
+  -webkit-transition: .15s linear;
+  transition: .15s linear;
 }
 
 .nav-link:hover:before {
-  width: 50%;
-  -webkit-transition: width 2s ease-in;
-  transition: width .2s ease-in;
+  width: 100%;
 }
 
 .nav-link:hover:after, .nav-link:hover:before {
-  width: 50%;
-  -webkit-transition: width 2s ease-in;
-  transition: width .2s ease-in;
+  width: 100%;
 }
 
 

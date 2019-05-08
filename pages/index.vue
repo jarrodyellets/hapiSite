@@ -100,6 +100,8 @@ export default {
   align-items: center;
   font-weight: 700;
   font-size: 0.85em;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .index-about-link {

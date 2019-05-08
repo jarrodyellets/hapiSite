@@ -69,6 +69,7 @@ a {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .footer-links-li {
@@ -77,6 +78,7 @@ a {
 
 .footer-text {
   font-size: .8em;
+  text-align: center;
 }
 
 </style>
