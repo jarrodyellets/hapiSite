@@ -1,12 +1,12 @@
 <template>
-  <div class='contain'>
+  <div class="contain">
     <Nav />
     <nuxt />
   </div>
 </template>
 
 <script>
-import Nav from '~/components/Nav.vue'
+import Nav from "~/components/Nav.vue"
 
 export default {
   components: {
@@ -17,10 +17,10 @@ export default {
 
 <style>
 @import "../assets/styles/variables.css";
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 
 html {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;

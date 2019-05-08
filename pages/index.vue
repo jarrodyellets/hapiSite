@@ -1,8 +1,12 @@
 <template>
   <section class="container">
     <div class="index-header">
-      <div class="index-header1">The Simple, Secure Framework</div>
-      <div class="index-header2">Developers Trust</div>
+      <div class="index-header1">
+        The Simple, Secure Framework
+      </div>
+      <div class="index-header2">
+        Developers Trust
+      </div>
     </div>
     <div class="index-description">
       Build
@@ -12,11 +16,12 @@
       <span class="bold">out-of-the-box</span> functionality -
       <span class="bold">your code, your way</span>
     </div>
-    <button class="index-button" href="/tutorials">Get Started with hapi</button>
+    <button class="index-button" href="/tutorials">
+      Get Started with hapi
+    </button>
     <div class="index-footer">
       Originally developed to handle Walmart’s
-      <span class="bold">Black Friday scale</span>,
-      hapi continues to be the
+      <span class="bold">Black Friday scale</span>, hapi continues to be the
       <span class="bold">proven</span> choice for
       <span class="bold">enterprise-grade</span> backend needs.
     </div>
@@ -24,13 +29,9 @@
 </template>
 
 <script>
-import Logo from "~/components/Logo.vue";
-
 export default {
-  components: {
-    Logo
-  }
-};
+  components: {}
+}
 
 // let nav = document.querySelector('.navbar');
 // let content = document.querySelector('.container');

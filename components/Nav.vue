@@ -1,22 +1,36 @@
 <template>
   <div class="nav-wrapper">
     <div class="navbar">
-      <a class="logo" href="/" title="Back to home"/>
+      <a class="logo" href="/" title="Back to home" />
       <ul class="nav-links">
-        <li class="nav-link" title="Tutorials">Tutorials</li>
-        <li class="nav-link" title="API">API</li>
-        <li class="nav-link" title="Plugins">Plugins</li>
-        <li class="nav-link" title="Updates">Updates</li>
-        <li class="nav-link" title="Contribute">Contrubute</li>
-        <li class="nav-link" title="Resources">Resources</li>
-        <li class="nav-link" title="Help">Help</li>
+        <li class="nav-link" title="Tutorials">
+          Tutorials
+        </li>
+        <li class="nav-link" title="API">
+          API
+        </li>
+        <li class="nav-link" title="Plugins">
+          Plugins
+        </li>
+        <li class="nav-link" title="Updates">
+          Updates
+        </li>
+        <li class="nav-link" title="Contribute">
+          Contrubute
+        </li>
+        <li class="nav-link" title="Resources">
+          Resources
+        </li>
+        <li class="nav-link" title="Help">
+          Help
+        </li>
       </ul>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {}
 </script>
 
 <style>
