@@ -10,17 +10,14 @@
           <li class="nav-link" title="API">
             API
           </li>
+          <li class="nav-link" title="Resources">
+            Resources
+          </li>
           <li class="nav-link" title="Plugins">
             Plugins
           </li>
           <li class="nav-link" title="Updates">
             Updates
-          </li>
-          <li class="nav-link" title="Contribute">
-            Contrubute
-          </li>
-          <li class="nav-link" title="Resources">
-            Resources
           </li>
           <li class="nav-link" title="Help">
             Help
@@ -55,7 +52,6 @@ export default {}
   justify-content: space-around;
   align-items: center;
   background: #fff;
-  /* border-bottom: 1px solid #ddd; */
 }
 
 .logo {
@@ -82,6 +78,15 @@ export default {}
   cursor: pointer;
   color: var(--orange);
   font-weight: 700;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+.nav-link:hover {
+  color: #fff;
+  background: var(--orange);
+  transition: all 0.3s ease 0s;
 }
 
 .hamburger {
@@ -111,7 +116,7 @@ export default {}
 
   .logo {
     height: 50px;
-    width: 66.6666px;
+    width: calc(100px * (2/3));
   }
 
   .nav-collapse {

@@ -17,7 +17,7 @@
       <span class="bold">your code, your way</span>
     </div>
     <button class="index-button" href="/tutorials">
-      Get Started with hapi
+      Get started with hapi
     </button>
     <div class="index-footer">
       Originally developed to handle Walmart’s
@@ -72,6 +72,14 @@ export default {
   margin: 40px 0;
   color: #fff;
   cursor: pointer;
+  border: 4px solid rgba(0, 0, 0, 0);
+}
+
+.index-button:hover {
+  border: 4px solid var(--orange);
+  background: #fff;
+  color: var(--orange);
+  transition: all 0.3s ease 0s;
 }
 
 .index-footer {
