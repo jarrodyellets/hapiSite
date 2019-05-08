@@ -72,6 +72,7 @@ export default {};
 }
 
 .nav-link {
+  position: relative;
   margin: 10px;
   cursor: pointer;
   color: var(--orange);
@@ -82,11 +83,38 @@ export default {};
   text-decoration: none;
 }
 
-.nav-link:hover {
-  color: #fff;
+.nav-link:before{
+  width: 0;
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 2px;
   background: var(--orange);
-  transition: all 0.3s ease 0s;
 }
+
+.nav-link:after {
+  width: 0;
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  height: 2px;
+  background: var(--orange);
+}
+
+.nav-link:hover:before {
+  width: 50%;
+  -webkit-transition: width 2s ease-in;
+  transition: width .2s ease-in;
+}
+
+.nav-link:hover:after, .nav-link:hover:before {
+  width: 50%;
+  -webkit-transition: width 2s ease-in;
+  transition: width .2s ease-in;
+}
+
 
 .hamburger {
   position: absolute;

@@ -102,6 +102,10 @@ export default {
   font-size: 0.85em;
 }
 
+.index-about-link {
+  cursor: pointer
+}
+
 .index-divider {
   padding: 0 5px;
 }
