@@ -2,29 +2,36 @@
   <div class="nav-wrapper">
     <div class="navbar">
       <a class="logo" href="/" title="Back to home" />
-      <ul class="nav-links">
-        <li class="nav-link" title="Tutorials">
-          Tutorials
-        </li>
-        <li class="nav-link" title="API">
-          API
-        </li>
-        <li class="nav-link" title="Plugins">
-          Plugins
-        </li>
-        <li class="nav-link" title="Updates">
-          Updates
-        </li>
-        <li class="nav-link" title="Contribute">
-          Contrubute
-        </li>
-        <li class="nav-link" title="Resources">
-          Resources
-        </li>
-        <li class="nav-link" title="Help">
-          Help
-        </li>
-      </ul>
+      <div class="nav-collapse">
+        <ul class="nav-links">
+          <li class="nav-link" title="Tutorials">
+            Tutorials
+          </li>
+          <li class="nav-link" title="API">
+            API
+          </li>
+          <li class="nav-link" title="Plugins">
+            Plugins
+          </li>
+          <li class="nav-link" title="Updates">
+            Updates
+          </li>
+          <li class="nav-link" title="Contribute">
+            Contrubute
+          </li>
+          <li class="nav-link" title="Resources">
+            Resources
+          </li>
+          <li class="nav-link" title="Help">
+            Help
+          </li>
+        </ul>
+      </div>
+      <a href="javascript:void(0);" class="hamburger">
+          <span class="hamburger-line hamburger-line-upper" />
+          <span class="hamburger-line hamburger-line-middle" />
+          <span class="hamburger-line hamburger-line-lower" />
+      </a>
     </div>
   </div>
 </template>
@@ -41,6 +48,7 @@ export default {}
 }
 
 .navbar {
+  position: relative;
   margin: 0 auto;
   padding: 10px;
   display: flex;
@@ -58,6 +66,10 @@ export default {}
   margin: 0;
 }
 
+.nav-collapse {
+  margin: 0;
+}
+
 .nav-links {
   list-style-type: none;
   margin: 0;
@@ -70,5 +82,46 @@ export default {}
   cursor: pointer;
   color: var(--orange);
   font-weight: 700;
+}
+
+.hamburger {
+  position: absolute;
+  display: none;
+}
+
+.hamburger-line {
+  display: block;
+  margin: 5px 0;
+  width: 20px;
+  height: 2px;
+  border-radius: 5px;
+  background: var(--black);
+}
+
+@media screen and (max-width: 900px){
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    padding: 5px 0 0 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .logo {
+    height: 50px;
+    width: 66.6666px;
+  }
+
+  .nav-collapse {
+    display: none;
+  }
+
+  .hamburger {
+    display: inline-block;
+    left: 20px;
+    top: 12px;
+  }
 }
 </style>
